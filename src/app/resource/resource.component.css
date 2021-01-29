@@ -1,0 +1,13 @@
+mat-card {
+    display: inline-block;
+    margin-top:5%;
+    margin-right:4%;
+    margin-left:4%;
+}
+
+
+
+mat-card-content {
+    margin-left:6%;
+    display: flex;
+}

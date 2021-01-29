@@ -1,0 +1,33 @@
+
+<div class="login-wrapper">
+    <mat-card class="form-card">
+        <div class="mat-card-header">
+          <div class="mat-card-title">Sign In</div>
+        </div>
+        <form [formGroup]="loginForm"  (ngSubmit)="onSubmit()" novalidate>
+            <mat-form-field class="form-full-width" appearance="outline">
+                <mat-label>Email</mat-label>  
+                <input matInput placeholder="Enter here" formControlName="email">
+                        <!-- error -->
+                <mat-error *ngIf="submitted && f.email.errors">
+                        <div *ngIf="f.email.errors.required">User Name is required</div>
+                </mat-error>
+            </mat-form-field>
+
+            <br/>
+            <mat-form-field class="form-full-width" appearance="outline">
+                <mat-label>Password</mat-label>  
+                <input type="password" matInput placeholder="Enter here" formControlName="password">
+                        <!-- error -->
+                <mat-error *ngIf="submitted && f.password.errors">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                </mat-error>
+            </mat-form-field>
+
+            <div class="button-wrapper">
+                <button [disabled]="loading" mat-flat-button color="primary">Login</button>
+                <a routerLink="/register" class="btn btn-link">Register</a>
+            </div>
+        </form>    
+    </mat-card> 
+</div>

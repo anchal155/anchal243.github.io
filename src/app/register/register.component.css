@@ -1,0 +1,19 @@
+.login-wrapper {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    min-width: 300px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form-full-width {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  

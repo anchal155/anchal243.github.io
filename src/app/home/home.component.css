@@ -1,0 +1,18 @@
+
+mat-card {
+    display: inline-block;
+    margin-top:5%;
+    margin-left:5%;
+}
+
+
+mat-header {
+  text-align: center;
+  margin-top:3%;
+
+}
+
+img {
+    margin-left:4%;
+  
+}

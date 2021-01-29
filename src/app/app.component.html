@@ -1,0 +1,11 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary">
+  <span>awesome-app</span>
+  <span class="span-spacer"></span>
+  <button (click)="navigateToRoute('/register')"  *ngIf="!currentUser" mat-button>Sign Up</button>
+  <button (click)="navigateToRoute('/login')" *ngIf="!currentUser" mat-button>login</button>
+  <button (click)="logout()" *ngIf="currentUser" mat-button>Logout</button>
+  <button (click)="navigateToRoute('/resources')" *ngIf="currentUser" mat-button>Resources</button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
